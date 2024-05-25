@@ -20,14 +20,15 @@
     @include('partials.header')
     @include('partials.jumbotron')
     <main>
-       @yield('content')
+        @yield('content')
     </main>
+    @include('partials.maincontent') 
     @include('partials.footertop')
     @include('partials.footermid')
     @include('partials.footerbot')
 
 
-    
+
 </body>
 
 </html>
