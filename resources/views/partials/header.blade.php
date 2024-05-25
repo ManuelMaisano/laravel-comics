@@ -6,9 +6,12 @@
             </div>
             <div id="nav" class="p-3">
                 <ul>
-                    <li><a href="&">CHARACTERS</a></li>
-                    <li><a href="&">COMICS</a></li>
-                    <li><a href="&">MOVIES</a></li>
+                    <li><a class=" {{ Route::currentRouteName() == 'charcters' ? 'active' : '' }}"href="{{route('characters')}}"</a>
+                    </li>
+                    <li><a class=" {{ Route::currentRouteName() == 'characters' ? 'active' : '' }}"
+                        href="{{route('characters')}} href="&">COMICS</a></li>
+                    <li><a class=" {{ Route::currentRouteName() == 'movies' ? 'active' : '' }}"
+                        href="{{route('movies')}} href="&">MOVIES</a></li>
                     <li><a href="&">TV</a></li>
                     <li><a href="&">GAMES</a></li>
                     <li><a href="&">COOLECTIBLES</a></li>
